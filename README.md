@@ -1,3 +1,26 @@
+Hi, you can view a demo of this slideshow at milicas.se
+
+The code is based on https://codepen.io/alexdevero/pen/rzqxpG?editors=0110
+
+I tweeked it to my needs and design. Why reinvent the wheel?
+Also my memory is not the best, remembering syntax is my darkside. Google is my salvation and damnation.
+I'm pro at reading and finding buggs in the code.
+
+lets begin:
+ in src/Components/App.js I import a file carouselSlidesData with classnames with all the background images and send them to a component called Carousel.js.
+
+ In carousel we have 2 onClick (line 24, 42 src/Components/Carousel.js) functions that alters the index on the active slide and change the state. 
+ Then pass it to like props to CarouselSlide which gives it classname background__image1, background__image2 or background__image3. Also sets an "active" class that changes between dispay: block/none.
+
+ CarouselLeftArrow and CarouselRightArrow return the arrows icons.
+
+ src/Css/App.scss is alla the style
+
+ on line 49 53 and 58 is where I set the backgorund images from src/Images/
+
+ also it is kind of responsive. Pictures are not the best for mobile.
+
+ 
 
 
 ## Available Scripts

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+//right icon
 class CarouselRightArrow extends Component {
   render() {
     return (

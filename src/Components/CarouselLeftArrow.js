@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+//icon left
 class CarouselLeftArrow extends Component {
   render() {
     return (

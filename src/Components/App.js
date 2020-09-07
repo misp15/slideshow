@@ -3,6 +3,8 @@ import '../Css/App.scss';
 import carouselSlidesData from './CarouselSlidesData';
 import Carousel from './Carousel';
 
+//CarouselSlidesData sends to <Carousel /> slides parameter
+
 function App() {
   return (
      

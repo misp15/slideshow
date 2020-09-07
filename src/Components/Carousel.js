@@ -11,7 +11,7 @@ class Carousel extends Component {
   constructor(props) {
     super(props);
 
-    this.goToSlide = this.goToSlide.bind(this);
+
     this.goToPrevSlide = this.goToPrevSlide.bind(this);
     this.goToNextSlide = this.goToNextSlide.bind(this);
 
@@ -20,12 +20,7 @@ class Carousel extends Component {
     };
   }
 
-  goToSlide(index) {
-    this.setState({
-      activeIndex: index
-    });
-  }
-
+  //checks activeIndex: and decrease it after it count how many slides it in CarouselSlidesData.js
   goToPrevSlide(e) {
     e.preventDefault();
 
@@ -44,6 +39,8 @@ class Carousel extends Component {
     });
   }
 
+  //checks activeIndex: if it is 2 then set state to 1 so it loops throw the index 0 1 2 (lenght is 3)
+  //check the consol in the webbrowser at milicas.se
   goToNextSlide(e) {
     e.preventDefault();
 
@@ -78,6 +75,8 @@ class Carousel extends Component {
         <CarouselLeftArrow onClick={e => this.goToPrevSlide(e)} />
 
         <ul className="carousel__slides">
+          {console.log(this.props.slides)}
+          {console.log(this.state.activeIndex)}
           {this.props.slides.map((slide, index) =>
             <CarouselSlide
               key={index}
